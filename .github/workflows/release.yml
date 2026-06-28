@@ -11,12 +11,9 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@master
-    - name: Archive Release
-      uses: thedoctor0/zip-release@0.7.5
+    - uses: edgarrc/action-7z@v1
       with:
-        type: 'zip'
-        filename: 'dol_no_longer_decaying.mod.zip'
-        exclusions: '*.git*'
+       args: 7z a "-tzip" "-mm=Deflate" "-mx=9" dol_no_longer_decaying.mod.zip boot.json README.md
     - name: Upload Release
       uses: ncipollo/release-action@v1.21.0
       with:
