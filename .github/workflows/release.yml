@@ -16,7 +16,7 @@ jobs:
         filename: 'dol_no_longer_decaying.mod.zip'
         exclusions: '*.git*'
     - name: Upload Release
-      uses: ncipollo/release-action@v1.12.0
+      uses: ncipollo/release-action@v1.21.0
       with:
         artifactErrorsFailBuild: true
         generateReleaseNotes: true
