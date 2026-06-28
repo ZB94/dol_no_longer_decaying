@@ -1,0 +1,59 @@
+{
+  "name": "dol_no_longer_decaying",
+  "nickName": "不再衰减"
+  "version": "1.0.0",
+  "styleFileList": [],
+  "scriptFileList": [],
+  "tweeFileList": [],
+  "imgFileList": [],
+  "additionFile": ["README.md"],
+  "addonPlugin": [
+    {
+      "modName": "ReplacePatcher",
+      "addonName": "ReplacePatcherAddon",
+      "modVersion": "1.0.0",
+      "params": {
+        "js": [
+          {
+            "comment": "学习成绩",
+            "from": "Time.schoolTerm && !(V.hypnosis_traits.devotion >= 3)",
+            "to": "false",
+            "fileName": "time.js"
+          },
+          {
+            "comment": "意志",
+            "from": "V.willpower *= 0.99;",
+            "to": "",
+            "fileName": "time.js"
+          },
+          {
+            "comment": "体能",
+            "from": "V.physique >= 1000",
+            "to": "false",
+            "fileName": "time.js"
+          },
+          {
+            "comment": "受虐",
+            "from": "V.masochism *= 0.985;",
+            "to": "",
+            "fileName": "time.js"
+          },
+          {
+            "comment": "施虐",
+            "from": "V.sadism *= 0.985;",
+            "to": "",
+            "fileName": "time.js"
+          }
+        ],
+        "css": [],
+        "twee": []
+      }
+    }
+  ],
+  "dependenceInfo": [
+    {
+      "modName": "ReplacePatcher",
+      "version": "^1.0.0"
+    }
+  ]
+}
