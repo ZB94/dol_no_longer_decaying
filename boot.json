@@ -1,12 +1,14 @@
 {
   "name": "dol_no_longer_decaying",
-  "nickName": "不再衰减"
+  "nickName": "不再衰减",
   "version": "1.0.0",
   "styleFileList": [],
   "scriptFileList": [],
   "tweeFileList": [],
   "imgFileList": [],
-  "additionFile": ["README.md"],
+  "additionFile": [
+    "README.md"
+  ],
   "addonPlugin": [
     {
       "modName": "ReplacePatcher",
